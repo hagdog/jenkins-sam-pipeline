@@ -105,5 +105,5 @@ Resources:
 
 Outputs:
   HelloEfsApi:
-    Description: "API Gateway endpoint URL for Prod stage for Hello EFS function"
+    Description: "API Gateway endpoint URL for Prod stage for Hello EFS function: 1"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
