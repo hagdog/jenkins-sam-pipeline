@@ -5,3 +5,10 @@
 The tutorial I followed to deploy and EC2 instance as a Jenkins server was incomplete. The instance did not include Docker. So, the instance could not build and deploy Docker containers to AWS through Jenkins.
 
 Follow the instructions at https://docs.docker.com/engine/install/ubuntu/ to fix this issue.
+
+## ## Issue: /var/run/docker.sock: connect: permission denied
+
+There are many articles on how to fix this issue. Most commonly, and in this case, I added Jenkins to the docker group:  sudo usermod -aG docker jenkins.
+
+Not sure if I needed to but I restarted the jenkins and docker services.
+
